@@ -31,14 +31,18 @@ Rather than your beating heart, you will get to use somewhat more modern technol
 **Figure 1** --- Schematic of the pendulum and timing photogate. The passage of the bob through the photogate interrupts a light beam (shown in red), which triggers the timing circuit.
 </p>
 
-Your experimental setup consists of a cylindrical pendulum "bob" suspended by a nylon monofilament line, as illustrated in Fig. 1. Note that the effective length $$\ell$$ of the pendulum is not the length of the nylon line, but the perpendicular distance from the axis of suspension to the center of mass of the bob.
+Your experimental setup consists of a cylindrical pendulum "bob" suspended by a nylon monofilament line, as illustrated in Fig. 1. You will adjust the length of the pendulum by loosening the hose clamps that anchor the nylon line, adjusting the length, and retightening. Note that the effective length $$\ell$$ of the pendulum is not the length of the nylon line, but the perpendicular distance from the axis of suspension to the center of mass of the bob.
+
+To time the motion of the pendulum, you will use a **photogate** connected to timing circuitry. A photogate has both a light source and light detector. When the beam from the source to the detector is interrupted by the presence of an object passing through the photogate, the photocurrent from the gate drops, which can be detected by the timing circuitry. To measure the **period**, the combination of blocks in the circuit you use needs to start timing when the bob interrupts the beam, continue counting when the bob passes again through the beam (but going in the opposite direction), and then stop when the bob interrupts the beam a third time. After pausing to display the elapsed time---so you can record the value---it needs to reset with the next passage of the bob through the beam to start another measurement cycle.
+
+## Week 1
+
+Use your hand to simulate the motion of the pendulum bob through the photogate beam and confirm that the circuitry is operating to measure the period of a pendulum bob. Describe the observations you make in your Google Doc lab notebook. 
 
 At your station you will find an accurate and precise digital timer for measuring the period and various tools
 for measuring lengths and angles. You will be able to change the pendulum length and the pendulum bob mass.  Be sure to familiarize yourself with the apparatus by playing with it *carefully and observantly* for a few minutes. 
 Verify that the timer circuit measures one full period of the pendulum, and
 learn how to read the display.  Get a rough idea of how sensitive the period is to changes in mass, length, and amplitude, and how sensitively you can adjust each quantity.  Be sure to keep records in your lab book of your observations, complete with sketches where appropriate. [**NOTE**:  *When releasing the pendulum bob, take care not to let it hit the timing gate, please!*]
-
-## Week 1
 
 Your goals this first week are to understand how the timing circuitry works to measure the pendulum's period and then to study how the angular amplitude of the pendulum's motion influences the period of its motion. As you will recall from the description above, Galileo determined that the period was independent of amplitude. On the other hand, he was using his pulse as a clock, and I suspect that his pulse was not quite as accurate as the crystal oscillators in the timing circuitry you will get to use.
 

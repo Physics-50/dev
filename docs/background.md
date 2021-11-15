@@ -1,6 +1,6 @@
 # Background
 
-You studied the simple pendulum in Physics 24(A), but may need a quick refresher. We'll go lightly over the theory and then also offer some information about local gravity.
+You studied the simple pendulum in Physics 24 or Physics 24A, but you may need a quick refresher. We'll go lightly over the theory and then also offer some information about local gravity.
 
 ## Theory
 
@@ -41,9 +41,9 @@ Since the period is the time it takes the pendulum to complete one oscillation, 
 
 ## Earth's gravitational field
 
-If the Earth were a perfect sphere (with a spherically symmetric distribution of mass)---and if it were not rotating---then the acceleration of gravity would only depend on how far one is from the center of the Earth. However, the Earth *is* rotating, which reduces the effective strength of local gravity the closer we are to the Equator, and it is not a perfect sphere, which means that there is some dependence of $$g$$ on latitude $$\lambda$$.
+If the Earth were a perfect sphere (with a spherically symmetric distribution of mass)---and if it were not rotating---then the acceleration of gravity would only depend on how far one is from the center of the Earth. However, the Earth *is* rotating, which reduces the effective strength of local gravity the closer we are to the Equator, and it is not a perfect sphere, which means that there is some dependence of $$g$$ on latitude $$\lambda$$. 
 
-You can request an accurate estimate of local gravity by entering local latitude, longitude, and height above mean sea level at the [NOAA gravitation calculator](https://geodesy.noaa.gov/cgi-bin/grav_pdx.prl){:target="_blank"}. Warning: *the site is picky about the numerical format you use. I find it easiest to use decimal degrees and to make sure I put a decimal point in the elevation value.*
+You can request an accurate estimate of local gravity by entering local latitude, longitude, and height above mean sea level at the [NOAA gravitation calculator](https://geodesy.noaa.gov/cgi-bin/grav_pdx.prl){:target="_blank"}. You can figure these out using standard apps on your smartphone or by Googling a bit. Warning: *the NOAA site is picky about the numerical format you use. I find it easiest to use decimal degrees and to make sure I put a decimal point in the elevation value.*
 
 
-The result is reported in milligals, where 1 gal is 1 cm/s<sup>2</sup>, so you should multiply the result given in milligals by $$10^{-5}$$ to express it in m/s<sup>2</sup>.
+In honor of Galileo Galilei, the result is reported in milli**gals**, where 1 gal is 1 cm/s<sup>2</sup>, so you should multiply the result given in milligals by $$10^{-5}$$ to convert to m/s<sup>2</sup>.

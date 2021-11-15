@@ -12,9 +12,20 @@
 
 --------------
 
+**Galileo Galilei** (1564--1642) claimed that he happened upon an important insight during mass in the Pisa cathedral when he noticed that the breeze had set a chandelier oscillating. Using his pulse as a clock, he noted that the period of the chandelier was independent of the amplitude of its motion, which he reasoned was the path to making an accurate clock. Before long, an industry of pendulum-based clocks arose to provide a way to reckon local time even on cloudy days. The center of clock-making technology soon shifted to the Netherlands, guided by **Christiaan Huygens** (1629--1695), but that history is not central to the investigation you will conduct, so we'll let it pass.
+
+To understanding how one might use a pendulum as an accurate time-keeping instrument, you will need to measure carefully how the period of its motion depends on 
+
++ the length $$\ell$$ of the pendulum
++ the amplitude $$\theta_0$$ of the pendulum's motion
++ the mass of the bob
+
+Rather than your beating heart, you will get to use somewhat more modern technology that will allow you to measure pendulum periods to 1 ms, or 0.1 ms, or 10 µs, depending on how you configure the electronics. Trust me: Galileo (a) would be insanely jealous and (b) wouldn't understand how that sort of accuracy is possible. Suffice it to say that we have learned a thing or two since Galileo helped launch the scientific revolution. These days, the thing physicists can measure with the greatest precision is frequencies---to something like **14 significant figures**, when we really try. 
+
 <p class='center' markdown='0'>
   <img src='figs/apparatus.png' alt='diagram of the apparatus' style='width: 400px;'>
 </p>
+
 
 <p class='mycap' markdown='1'>
 **Figure 1** --- Schematic of the pendulum and timing photogate. The passage of the bob through the photogate interrupts a light beam (shown in red), which triggers the timing circuit.
@@ -22,18 +33,15 @@
 
 Your experimental setup consists of a cylindrical pendulum "bob" suspended by a nylon monofilament line, as illustrated in Fig. 1. Note that the effective length $$\ell$$ of the pendulum is not the length of the nylon line, but the perpendicular distance from the axis of suspension to the center of mass of the bob.
 
-At your station you will find an accurate and precise (*how* accurate and *how* precise?) digital timer for measuring the period and various tools
-for measuring lengths and angles.  You will be able to change the pendulum
-length and the pendulum bob mass.  Be sure to familiarize yourself with the
-apparatus by playing with it *carefully and observantly* for a few minutes. 
+At your station you will find an accurate and precise digital timer for measuring the period and various tools
+for measuring lengths and angles. You will be able to change the pendulum length and the pendulum bob mass.  Be sure to familiarize yourself with the apparatus by playing with it *carefully and observantly* for a few minutes. 
 Verify that the timer circuit measures one full period of the pendulum, and
-learn how to read the display.  Get a rough idea of how sensitive the period is to changes in mass, length, and amplitude, and how sensitively you can adjust each quantity.  Be sure to keep records in your lab book of your observations, complete with sketches where appropriate. [**NOTE**:  *When releasing the pendulum bob, take care not to let it hit the timing gate!*]
-
-## Mini-modules
-
-I should have a section on how the mini-modules work. It should mention that students can change the count rate to achieve greater resolution.
+learn how to read the display.  Get a rough idea of how sensitive the period is to changes in mass, length, and amplitude, and how sensitively you can adjust each quantity.  Be sure to keep records in your lab book of your observations, complete with sketches where appropriate. [**NOTE**:  *When releasing the pendulum bob, take care not to let it hit the timing gate, please!*]
 
 ## Week 1
+
+Your goals this first week are to understand how the timing circuitry works to measure the pendulum's period and then to study how the angular amplitude of the pendulum's motion influences the period of its motion. As you will recall from the description above, Galileo determined that the period was independent of amplitude. On the other hand, he was using his pulse as a clock, and I suspect that his pulse was not quite as accurate as the crystal oscillators in the timing circuitry you will get to use.
+
 
 Want them to start with dependence on amplitude. In Week 2, they can look at length dependence (and possibly mass). The final deliverable ought to be (a) a plot of the amplitude dependence for a fixed (long) value of $$\ell$$. (b) a plot and fit to the length dependence from which they deduce a value for local $$g$$. They should be plotting as they take data in Google Sheets. Maybe I can explore using Python rather than Matlab for plotting/fitting.
 

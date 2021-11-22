@@ -1,6 +1,14 @@
 # Background
 
-You studied the simple pendulum in Physics 24 or Physics 24A, but you may need a quick refresher. We'll go lightly over the theory and then also offer some information about local gravity.
+**Galileo Galilei** (1564--1642) claimed that he happened upon an important insight during mass in the Pisa cathedral when he noticed that the breeze had set a chandelier oscillating. Using his pulse as a clock, he noted that the period of the chandelier was independent of the amplitude of its motion, which he reasoned was the path to making an accurate clock. Before long, an industry of pendulum-based clocks arose to provide a way to reckon local time even on cloudy days. The center of clock-making technology soon shifted to the Netherlands, guided by **Christiaan Huygens** (1629--1695), but that history is not central to the investigation you will conduct, so we'll let it pass.
+
+To understanding how one might use a pendulum as an accurate time-keeping instrument, you will need to measure carefully how the period of its motion depends on 
+
++ the length $$\ell$$ of the pendulum
++ the amplitude $$\theta_0$$ of the pendulum's motion
++ the mass of the bob
+
+Rather than your beating heart, you will get to use somewhat more modern technology that will allow you to measure pendulum periods to 1 ms, or 0.1 ms, or 10 µs, depending on how you configure the electronics. Trust me: Galileo (a) would be insanely jealous and (b) wouldn't understand how that sort of accuracy is possible. Suffice it to say that we have learned a thing or two since Galileo helped launch the scientific revolution. These days, the thing physicists can measure with the greatest precision is frequencies---to something like **14 significant figures**, when we really try. 
 
 ## Theory
 

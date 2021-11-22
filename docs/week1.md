@@ -12,51 +12,15 @@
 
 --------------
 
-**Galileo Galilei** (1564--1642) claimed that he happened upon an important insight during mass in the Pisa cathedral when he noticed that the breeze had set a chandelier oscillating. Using his pulse as a clock, he noted that the period of the chandelier was independent of the amplitude of its motion, which he reasoned was the path to making an accurate clock. Before long, an industry of pendulum-based clocks arose to provide a way to reckon local time even on cloudy days. The center of clock-making technology soon shifted to the Netherlands, guided by **Christiaan Huygens** (1629--1695), but that history is not central to the investigation you will conduct, so we'll let it pass.
-
-To understanding how one might use a pendulum as an accurate time-keeping instrument, you will need to measure carefully how the period of its motion depends on 
-
-+ the length $$\ell$$ of the pendulum
-+ the amplitude $$\theta_0$$ of the pendulum's motion
-+ the mass of the bob
-
-Rather than your beating heart, you will get to use somewhat more modern technology that will allow you to measure pendulum periods to 1 ms, or 0.1 ms, or 10 µs, depending on how you configure the electronics. Trust me: Galileo (a) would be insanely jealous and (b) wouldn't understand how that sort of accuracy is possible. Suffice it to say that we have learned a thing or two since Galileo helped launch the scientific revolution. These days, the thing physicists can measure with the greatest precision is frequencies---to something like **14 significant figures**, when we really try. 
-
-<p class='center' markdown='0'>
-  <img src='figs/apparatus.png' alt='diagram of the apparatus' style='width: 400px;'>
-</p>
 
 
-<p class='mycap' markdown='1'>
-**Figure 1** --- Schematic of the pendulum and timing photogate. The passage of the bob through the photogate interrupts a light beam (shown in red), which triggers the timing circuit.
-</p>
-
-Your experimental setup consists of a cylindrical pendulum "bob" suspended by a nylon monofilament line, as illustrated in Fig. 1. You will adjust the length of the pendulum by loosening the hose clamps that anchor the nylon line, adjusting the length, and retightening. Note that the effective length $$\ell$$ of the pendulum is not the length of the nylon line, but the perpendicular distance from the axis of suspension to the center of mass of the bob.
-
-To time the motion of the pendulum, you will use a **photogate** connected to timing circuitry. A photogate has both a light source and light detector. When the beam from the source to the detector is interrupted by the presence of an object passing through the photogate, the photocurrent from the gate drops, which can be detected by the timing circuitry. To measure the **period**, the combination of blocks in the circuit you use needs to start timing when the bob interrupts the beam, continue counting when the bob passes again through the beam (but going in the opposite direction), and then stop when the bob interrupts the beam a third time. After pausing to display the elapsed time---so you can record the value---it needs to reset with the next passage of the bob through the beam to start another measurement cycle.
-
-## Week 1
-
-Use your hand to simulate the motion of the pendulum bob through the photogate beam and confirm that the circuitry is operating to measure the period of a pendulum bob. Describe the observations you make in your Google Doc lab notebook. 
-
-At your station you will find an accurate and precise digital timer for measuring the period and various tools
-for measuring lengths and angles. You will be able to change the pendulum length and the pendulum bob mass.  Be sure to familiarize yourself with the apparatus by playing with it *carefully and observantly* for a few minutes. 
-Verify that the timer circuit measures one full period of the pendulum, and
-learn how to read the display.  Get a rough idea of how sensitive the period is to changes in mass, length, and amplitude, and how sensitively you can adjust each quantity.  Be sure to keep records in your lab book of your observations, complete with sketches where appropriate. [**NOTE**:  *When releasing the pendulum bob, take care not to let it hit the timing gate, please!*]
-
-Your goals this first week are to understand how the timing circuitry works to measure the pendulum's period and then to study how the angular amplitude of the pendulum's motion influences the period of its motion. As you will recall from the description above, Galileo determined that the period was independent of amplitude. On the other hand, he was using his pulse as a clock, and I suspect that his pulse was not quite as accurate as the crystal oscillators in the timing circuitry you will get to use.
-
-
-Want them to start with dependence on amplitude. In Week 2, they can look at length dependence (and possibly mass). The final deliverable ought to be (a) a plot of the amplitude dependence for a fixed (long) value of $$\ell$$. (b) a plot and fit to the length dependence from which they deduce a value for local $$g$$. They should be plotting as they take data in Google Sheets. Maybe I can explore using Python rather than Matlab for plotting/fitting.
-
-
------------------------
 
 In the Exploratory Phase it can be especially important to take detailed notes. Organizing a digital lab notebook and data spreadsheet can be tricky, so for Week 1 we are providing a [template for you to follow along with that we've assigned from Google Classroom](https://classroom.google.com/u/0/w/MzY5MzA2OTcxNzM4/t/all){:target="_blank"}. 
 
 **Make sure you have this spreadsheet and your Module 1 Lab Notebook handy as you go through the content on this Week 1 page. Remember: you are required to use the provided spreadsheet/lab notebook.**
 
 ## Preface
+
 If you have any questions outside of class, we encourage you to reach out to your classmates through the class Piazza site or come to office hours to talk to an instructor. [You can sign up for the class Piazza site here.](https://piazza.com/hmc/fall2021/ph50)
 
 Before diving into data collection and analysis we would like to set some expectations. This course centers around the collection, analysis, and communication of experimental data and results. We expect all of these to be conducted with care and integrity.
@@ -93,38 +57,67 @@ You are trying to time how fast your little brother can run. Initially you do th
 
 You may find yourself in a situation where it isn't as clear what is acceptable. When in doubt please ask. 
 
-## Background Reading
+## Background Reading 
 
-Often the first step is to do some background reading and theoretical analysis. We are measuring the coefficient of static friction, a dimensionless number that depends on the two surfaces in contact. This video from Prof. Arlett on how $$\mu_s$$ and $$\theta_c$$ are related will provide some background and a quick refresher:
-[<img src="images/static-friction-video-preview.png" alt="refresher on how mu_s is related to theta_c" width="400"/>](https://drive.google.com/file/d/1YJCo0SK2Mi3Z8hzRhgZ8WHyLzuaXgzMx/view?usp=sharing){:target="_blank"} 
+You may need a [refresher on how to apply Newtonian mechanics to a simple pendulum](background.md). Feel free, of course, to return to this page as needed.
 
-In your lab notebook, try the derivation yourself and document the result.
+<p class='center' markdown='0'>
+  <img src='figs/apparatus.png' alt='diagram of the apparatus' style='width: 400px;'>
+</p>
+
+<p class='mycap' markdown='1'>
+**Figure 1** --- Schematic of the pendulum and timing photogate. The passage of the bob through the photogate interrupts a light beam (shown in red), which triggers the timing circuit.
+</p>
+
+Your experimental setup consists of a cylindrical pendulum "bob" suspended by a nylon monofilament line, as illustrated in Fig. 1. You will adjust the length of the pendulum by loosening the hose clamps that secure the nylon line, adjusting the length, and then retightening. Note that the effective length $$\ell$$ of the pendulum is not the length of the nylon line, but the perpendicular distance from the axis of suspension to the center of mass of the bob. 
+
+To time the motion of the pendulum, you will use a **photogate** connected to timing circuitry. A photogate has both a light source and light detector. When the beam from the source to the detector is interrupted by the presence of an object passing through the photogate, the photocurrent from the gate drops, which can be detected by the timing circuitry. To measure the **period**, the combination of blocks in the circuit you use needs to start timing when the bob interrupts the beam, continue counting when the bob passes again through the beam (but going in the opposite direction), and then stop when the bob interrupts the beam a third time. After pausing to display the elapsed time---so you can record the value---it needs to reset with the next passage of the bob through the beam to start another measurement cycle.
+
+## Week 1
+
+Use your hand to simulate the motion of the pendulum bob through the photogate beam and confirm that the circuitry is operating to measure the period of a pendulum bob. *Describe the observations you make in your Google Doc lab notebook.*
+
+At your station you will find an accurate and precise digital timer for measuring the period and various tools
+for measuring lengths and angles. You will be able to change the pendulum length and the pendulum bob mass.  Be sure to familiarize yourself with the apparatus by playing with it *carefully and observantly* for a few minutes. 
+Verify that the timer circuit measures one full period of the pendulum, and
+learn how to read the display.  Get a rough idea of how sensitive the period is to changes in mass, length, and amplitude, and how sensitively you can adjust each quantity.  Be sure to keep records in your lab book of your observations, complete with sketches where appropriate. [**NOTE**:  *When releasing the pendulum bob, take care not to let it hit the timing gate, please!*]
+
 
 ## Formulating a Hypothesis
 
-We can now try to think of a hypothesis we can test with an experiment. As a quick check, according to the theory, which factors will affect a measurement of $$\theta_c$$?
+For the first part of this experiment, you should formulate a hypothesis ("have an expectation") as to how the period $$T$$ of the pendulum's motion (for fixed mass $$M$$ and length $$L$$) depends on the angular amplitude ($$\theta_0$$) of its motion. Things to consider:
 
-#### Miniquestion: Critical Angle Factors
-[*Click here to open in a new tab*](https://forms.gle/oUrvxpsg5foNjnVH7){:target="_blank"}
++ Recall that Galileo determined that the period was independent of the amplitude.
++ On the other hand, it may seem that it ought to take longer for the pendulum bob to execute a period for a greater amplitude, since it has to move farther to get back to its starting position.
++ The greater the amplitude, the more air resistance can slow down the motion, leading to longer periods.
++ There is a symmetry to the pendulum's motion, insofar as positive amplitudes are the same as negative amplitudes---it just depends on which way you are facing.
++ An ideal pendulum bob is a point mass suspended from an inextensible string, but the mass you use is not really a point mass and the string can stretch.
 
-<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfFH6ZBvZzAlN_LNJQqnmFCPN97KyLGW44mU-AsTd_XSAxcTw/viewform?embedded=true" width="640" height="300" frameborder="0" marginheight="0" marginwidth="0">Loading…
-</iframe>
+After considering these points, and others that may occur to you, record your hypothesis for $$T(\theta_0)$$ in your notebook.
 
------
+Your goals this first week are to understand how the timing circuitry works to measure the pendulum's period and then to study how the angular amplitude influences the period of the pendulum's motion. As you will recall from the description above, Galileo determined that the period was independent of amplitude. On the other hand, he was using his pulse as a clock, and I suspect that his pulse was not quite as accurate as the crystal oscillators in the timing circuitry you will get to use.
 
-Based on this answer, can you think of any hypotheses you could try to test? 
+- Choose a value of $$L$$ that is as large as you can reasonably make it, given the need to provide adequate clearance for the photogate. Be sure to record the value of $$L$$ that you use, along with an estimate of the uncertainty in this value.
 
-**While there are many different hypotheses you might consider, for Module 1 we will all test the same hypothesis. The hypothesis we will test is:**
+- Explore ways of obtaining reliable (and repeatable) measurements of the period for various amplitudes. Note in your lab notebook the methods you explored and the reasoning behind your decision to use the method you ultimately choose.
 
-*"The coefficient of static friction between two surfaces as measured by the critical angle at which an object slips is independent of the mass of the sliding object."*
+- Measure the period for your chosen value of $$L$$ for a *wide* range of amplitudes, recording values in your Google Sheet.
+
+- Add a plot of $$T$$ vs. $$\theta$$ in your Google Sheet.
+
+### Deliverables
+
+  1. Describe the method you developed for obtaining careful and accurate measurements of period as a function of amplitude.
+  2. Your spreadsheet of data and plot
+  3. Your interpretation of the results you have obtained. To what extent can you say that the period is *independent* of amplitude? 
+
+
+-----------------------
+
 
 ## Instrumentation
 
-Now that we've decided what hypothesis we are going to test, we need to figure out what equipment and experimental tools we are going to use. For this module, a ramp, container, and different masses that can be placed in the container will be provided at your lab bench. 
 
-To measure the angle you will use your phone and the **Phyphox** App. Please go to [phyphox.org](https://phyphox.org){:target="_blank"} (or to the app store on your device) and download the phyphox app. Try to do this before you come to class for the first day of lab. After downloading, find the "Inclination" tool and test that it works correctly with your phone.
-
-<img src="images/phyphox.png" alt="phyphox.org inclination tool" width="400"/>
 
 Make note of your equipment in your lab notebook (record keeping is important) and record any other notes you think might be helpful if someone else was trying to replicate your setup. Remember: for the praciticum you will only have access to your Google-classroom-assigned lab notebook and data sheet.
 
@@ -164,6 +157,7 @@ Usually one of the first exploratory steps is to use your equipment to take a si
 *Friendly reminder: convert the angle from degrees to radians in your Google Sheet calculation. **You also need to convert your uncertainty in the angle from degrees to radians in the same manner**.*
 
 ### Combining Uncertainties
+
 
 When you make a measurement you will have both random and resolution (sometimes multiple!) uncertainties. In order to obtain one actual uncertainty to quote in your value you can combine the sources by adding in quadrature. Adding in quadrature means to square each value for your uncertainty, add them all together, and take the square root of the sum,
 $$ \delta x_\mathrm{total} = \sqrt{\delta x_1^2 + \delta x_2^2 + \delta x_3^2 + \cdots}$$
